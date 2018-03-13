@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22-abr-2017 5:54:52 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Books" table="Books" schema="dbo" catalog="Libreria" optimistic-lock="version">
+        <id name="titulo" type="string">
+            <column name="Titulo" />
+            <generator class="assigned" />
+        </id>
+        <property name="autor" type="string">
+            <column name="Autor" />
+        </property>
+        <property name="tema" type="string">
+            <column name="Tema" />
+        </property>
+        <property name="ocupado" type="string">
+            <column name="Ocupado" />
+        </property>
+        <property name="imagen" type="binary">
+            <column name="Imagen" />
+        </property>
+    </class>
+</hibernate-mapping>
